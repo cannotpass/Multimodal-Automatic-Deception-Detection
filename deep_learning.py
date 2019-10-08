@@ -343,7 +343,7 @@ tokenizer = Tokenizer(num_words = NUM_WORDS)
 tokenizer.fit_on_texts(TESTIM['input'])
 
 sequences = tokenizer.texts_to_sequences(TESTIM['input'])
-trial_sequences = sequences
+trial_sequences =sequences
 word_index = tokenizer.word_index
 
 vocab_size = min(len(word_index) + 1, NUM_WORDS)
